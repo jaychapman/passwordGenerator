@@ -8,8 +8,6 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener('click', function(){
   var lengthPrompt = prompt('Choose a length for your password. Must be between 8-128 characters');
   if (lengthPrompt !=null) {
-    var chooseLength = lengthPrompt;
-    //console.log(chooseLength);
     document.getElementById('length').innerHTML = 'Password Length: ' + lengthPrompt;
   }
   if (lengthPrompt <= 7) {
