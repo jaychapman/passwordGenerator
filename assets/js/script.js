@@ -26,6 +26,7 @@ generateBtn.addEventListener('click', function(){
     var upperPrompt = confirm('Do you want to include uppercase letters? Click OK to include uppercase or cancel to get more options.');
     if (upperPrompt !=null) {
       var chooseUpper = upperPrompt;
+      console.log(chooseUpper);
       document.getElementById('upper').innerHTML = 'Include Uppercase Letters: ' + upperPrompt;
     }
 
@@ -33,6 +34,7 @@ generateBtn.addEventListener('click', function(){
     var lowerPrompt = confirm('Do you want to include lowercase letters? Click OK to include lowercase letters or cancel to get more options.');
     if (lowerPrompt !=null) {
       var chooseLower = lowerPrompt;
+      console.log(chooseLower);
       document.getElementById('lower').innerHTML = 'Include Lowercase Letters: ' + lowerPrompt;
     }
 
@@ -40,6 +42,7 @@ generateBtn.addEventListener('click', function(){
     var numberPrompt = confirm('Do you want to include numbers? Click OK to include numbers or cancel to get more options.');
     if (numberPrompt !=null) {
       var chooseNumber = numberPrompt;
+      console.log(chooseNumber);
       document.getElementById('numbers').innerHTML = 'Include Numbers: ' + numberPrompt;
   
 
@@ -47,6 +50,7 @@ generateBtn.addEventListener('click', function(){
     var specialsPrompt = confirm('Do you want to include special characters? Click OK to include special characters or cancel to ignore special Characters and move to the next screen.');
     if (specialsPrompt !=null) {
       var chooseSpecials = specialsPrompt;
+      console.log(chooseSpecials);
       document.getElementById('specials').innerHTML = 'Include Special Characters: ' + specialsPrompt;
     }
 
