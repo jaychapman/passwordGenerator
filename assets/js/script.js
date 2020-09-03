@@ -9,7 +9,7 @@ generateBtn.addEventListener('click', function(){
   var lengthPrompt = prompt('Choose a length for your password. Must be between 8-128 characters');
   if (lengthPrompt !=null) {
     var chooseLength = lengthPrompt;
-    console.log(chooseLength);
+    //console.log(chooseLength);
     document.getElementById('length').innerHTML = 'Password Length: ' + lengthPrompt;
   }
   if (lengthPrompt <= 7) {
@@ -22,35 +22,29 @@ generateBtn.addEventListener('click', function(){
     alert('Only numbers can be entered for password length');
   } else {
 
+    // Collect user's preferences and display on page
+
     // Choose Uppercase
     var upperPrompt = confirm('Do you want to include uppercase letters? Click OK to include uppercase or cancel to get more options.');
     if (upperPrompt !=null) {
-      var chooseUpper = upperPrompt;
-      console.log(chooseUpper);
       document.getElementById('upper').innerHTML = 'Include Uppercase Letters: ' + upperPrompt;
     }
 
     // Choose Lowercase
     var lowerPrompt = confirm('Do you want to include lowercase letters? Click OK to include lowercase letters or cancel to get more options.');
     if (lowerPrompt !=null) {
-      var chooseLower = lowerPrompt;
-      console.log(chooseLower);
       document.getElementById('lower').innerHTML = 'Include Lowercase Letters: ' + lowerPrompt;
     }
 
     // Choose Numbers
     var numberPrompt = confirm('Do you want to include numbers? Click OK to include numbers or cancel to get more options.');
     if (numberPrompt !=null) {
-      var chooseNumber = numberPrompt;
-      console.log(chooseNumber);
       document.getElementById('numbers').innerHTML = 'Include Numbers: ' + numberPrompt;
   
 
     // Choose Special Characters
     var specialsPrompt = confirm('Do you want to include special characters? Click OK to include special characters or cancel to ignore special Characters and move to the next screen.');
     if (specialsPrompt !=null) {
-      var chooseSpecials = specialsPrompt;
-      console.log(chooseSpecials);
       document.getElementById('specials').innerHTML = 'Include Special Characters: ' + specialsPrompt;
     }
 
@@ -58,7 +52,9 @@ generateBtn.addEventListener('click', function(){
     // Confirm prompt to generate password
     confirm('Click OK to generate your password or Cancel to start over');
 
+
     // These if statements will create a new variable based on user's choices
+
 
     // Add uppercase to password
       if(upperPrompt === true){
